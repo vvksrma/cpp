@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int nums[] = {10, 2, 34, -2, 30, 66}; // array
+    int size = 6; // size of the elements
+
+    int smallest = INT_MAX; // +infinity
+    int largest = INT_MIN; // -infinity
+
+// finding the smallest element
+    for(int i = 0; i < size; i++){
+        if(nums[i] < smallest){
+            smallest = nums[i];
+        }
+    }
+
+// finding the largest element
+    for(int i = 0; i < size; i++){
+        if(nums[i] > largest){
+            largest = nums[i];
+        }
+    }
+
+    cout << "Smallest is: " << smallest << endl;
+    cout << "Largest is: " << largest << endl;
+
+    return 0;
+}
